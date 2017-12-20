@@ -2,6 +2,8 @@
 This component is a graphic component that dynamically displays an image based on a associated question component's answer state.
 There is a neutral image. And One image for correct, incorrect or partialy correct answer.
 
+![FeedbackAvatar](https://github.com/LearnChamp/sharedAssets/blob/master/assets/adapt-feedbackAvatar.gif?raw=true)
+
 ## Installation
 To install the component with the [Adapt CLI](https://github.com/adaptlearning/adapt-cli), run the following from the command line:  
 `adapt install adapt-feedbackAvatar`
