@@ -1,0 +1,17 @@
+{
+  "name": "adapt-feedbackAvatar",
+  "repository": "git://github.com/LearnChamp/adapt-feedbackAvatar",
+  "version": "1.0.0",
+  "framework": ">=2",
+  "homepage": "",
+  "issues": "",
+  "displayName" : "Feedback Avatar",
+  "component" : "feedbackAvatar",
+  "description": "Graphic component that dynamically displays an image based on a related question component's state",
+  "main": "/js/adapt-feedbackAvatar.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-component"
+  ],
+  "license": ""
+}

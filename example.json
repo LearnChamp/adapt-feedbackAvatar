@@ -1,0 +1,31 @@
+{
+    "_id": "c-10",
+    "_parentId": "b-10",
+    "_type": "component",
+    "_component": "feedbackAvatar",
+    "_classes": "",
+    "_layout": "left",
+    "title": "Here is a feedback avatar",
+    "displayTitle": "",
+    "body": "",
+    "instruction": "",
+    "_questionId": "c-10",
+    "_graphics": {
+        "_neutral": {
+            "_src": "course/en/images/neutral.jpg",
+            "alt": "alt text neutral"
+        },
+        "_correct": {
+            "_src": "course/en/images/correct.jpg",
+            "alt": "alt text correct"
+        },
+        "_incorrect": {
+            "_src": "course/en/images/incorrect.jpg",
+            "alt": "alt text incorrect"
+        },
+        "_partlyCorrect": {
+            "_src": "course/en/images/partlyCorrect.jpg",
+            "alt": "alt text partly correct"
+        }
+    }
+}

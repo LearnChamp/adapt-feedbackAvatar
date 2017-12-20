@@ -1,0 +1,159 @@
+{
+  "type":"object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "$ref": "http://localhost/plugins/content/component/model.schema",
+  "globals": {
+    "ariaRegion": {
+      "type": "string",
+      "required": true,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "translatable": true
+    }
+  },
+  "properties":{
+    "_supportedLayout": {
+      "type": "string",
+      "required": true,
+      "enum": ["full-width", "half-width", "both"],
+      "default": "both",
+      "editorOnly": true
+    },
+    "instruction": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "inputType": "Text",
+      "validators": [],
+      "help": "This is the instruction text",
+      "translatable": true
+    },
+    "_questionId": {
+      "type": "string",
+      "required": true,
+      "title": "Question ID",
+      "default": "",
+      "inputType": "Text",
+      "validators": ["required"],
+      "help": "the ID of the question associated with the Avatar",
+      "translatable": false
+    },
+    "_graphics": {
+      "type": "object",
+      "required": true,
+      "title": "Graphics",
+      "properties": {
+        "_neutral": {
+          "type": "object",
+          "required": true,
+          "title": "Neutral Graphic",
+          "properties": {
+            "_src": {
+              "type": "string",
+              "required": true,
+              "title": "Neutral-Image",
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": ["required"],
+              "help": "The Avatar for unanswered question",
+              "translatable": false
+            },
+            "alt": {
+              "type": "string",
+              "required": false,
+              "title": "Alt",
+              "default": "",
+              "inputType": "Text",
+              "validators": [],
+              "help": "The alt text for the neutral Avatar",
+              "translatable": true
+            }
+          }
+        },
+        "_correct": {
+          "type": "object",
+          "required": true,
+          "title": "correct Graphic",
+          "properties": {
+            "_src": {
+              "type": "string",
+              "required": true,
+              "title": "Correct-Image",
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": ["required"],
+              "help": "The Avatar displayed when the answer is answered correct",
+              "translatable": false
+            },
+            "alt": {
+              "type": "string",
+              "required": false,
+              "title": "Alt",
+              "default": "",
+              "inputType": "Text",
+              "validators": [],
+              "help": "The alt text for the graphic",
+              "translatable": true
+            }
+          }
+        },
+        "_incorrect": {
+          "type": "object",
+          "required": true,
+          "title": "Incorrect Graphic",
+          "properties": {
+            "_src": {
+              "type": "string",
+              "required": true,
+              "title": "Incorrect-Image",
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": ["required"],
+              "help": "The Avatar displayed when the answer is answered incorrect",
+              "translatable": false
+            },
+            "alt": {
+              "type": "string",
+              "required": false,
+              "title": "Alt",
+              "default": "",
+              "inputType": "Text",
+              "validators": [],
+              "help": "The alt text for the graphic",
+              "translatable": true
+            }
+          }
+        },
+        "_partlyCorrect": {
+          "type": "object",
+          "required": true,
+          "title": "Partlycorrect Graphic",
+          "properties": {
+            "_src": {
+              "type": "string",
+              "required": true,
+              "title": "Partlycorrect-Image",
+              "default": "",
+              "inputType": "Asset:image",
+              "validators": ["required"],
+              "help": "The Avatar displayed when the answer is answered partlycorrect",
+              "translatable": false
+            },
+            "alt": {
+              "type": "string",
+              "required": false,
+              "title": "Alt",
+              "default": "",
+              "inputType": "Text",
+              "validators": [],
+              "help": "The alt text for the graphic",
+              "translatable": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

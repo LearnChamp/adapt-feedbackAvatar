@@ -1,0 +1,32 @@
+.feedback-avatar-widget {
+
+    .avatar-container {
+        position: relative;
+    }
+
+    .avatar-outer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.5s;
+
+        .hidden {
+            opacity: 0;
+        }
+
+        &.avatar-neutral-outer {
+            position: relative;
+            opacity: 1;
+        }
+    
+        img {
+            transition: opacity 1s;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+}

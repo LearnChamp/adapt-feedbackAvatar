@@ -1,0 +1,19 @@
+<div class="feedback-avatar-inner component-inner" role="region" aria-label="{{_globals._components._feedbackAvatar.ariaRegion}}" question-id="{{_questionId}}">
+	{{> component this}}
+	<div class="feedback-avatar-widget component-widget">
+		<div class="avatar-container">
+			<div class="avatar-neutral-outer avatar-outer">
+				<img src="{{_graphics._neutral._src}}" {{#if _graphic._neutral.alt}}aria-label="{{_graphic._neutral.alt}}" tabindex="0"{{else}} class="avatar avatar-neutral a11y-ignore" aria-hidden="true" tabindex="-1"{{/if}}/>
+			</div>
+			<div class="avatar-correct-outer avatar-outer">
+				<img src="{{_graphics._correct._src}}" {{#if _graphic._correct.alt}}aria-label="{{_graphic._correct.alt}}" tabindex="0"{{else}} class="avatar avatar-correct a11y-ignore hidden" aria-hidden="true" tabindex="-1"{{/if}}/>
+			</div>
+			<div class="avatar-incorrect-outer avatar-outer">
+				<img src="{{_graphics._incorrect._src}}" {{#if _graphic._incorrect.alt}}aria-label="{{_graphic._incorrect.alt}}" tabindex="0"{{else}} class="avatar avatar-incorrect a11y-ignore hidden" aria-hidden="true" tabindex="-1"{{/if}}/>
+			</div>
+			<div class="avatar-partly-correct avatar-outer">
+				<img src="{{_graphics._partlyCorrect._src}}" {{#if _graphic._partlyCorrect.alt}}aria-label="{{_graphic._partlyCorrect.alt}}" tabindex="0"{{else}} class="avatar avatar-partly-correct a11y-ignore hidden" aria-hidden="true" tabindex="-1"{{/if}}/>
+			</div>
+		</div>
+	</div>
+</div>
